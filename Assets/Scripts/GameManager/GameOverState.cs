@@ -16,8 +16,8 @@ public class GameOverState : AState
 
 	public AudioClip gameOverTheme;
 
-	public Leaderboard miniLeaderboard;
-	public Leaderboard fullLeaderboard;
+	public LeaderboardFromAssetStore miniLeaderboard;
+	public LeaderboardFromAssetStore fullLeaderboard;
 
     public GameObject addButton;
 

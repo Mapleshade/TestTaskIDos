@@ -39,7 +39,7 @@ public class LoadoutState : AState
 	public Image accessoryIconDisplay;
 
 	[Header("Other Data")]
-	public Leaderboard leaderboard;
+	public LeaderboardFromAssetStore leaderboard;
     public MissionUI missionPopup;
 	public Button runButton;
 
