@@ -26,5 +26,6 @@ public class StartButton : MonoBehaviour
         var module = StandardPurchasingModule.Instance();
 #endif
         SceneManager.LoadScene("main");
+		SceneManager.UnloadSceneAsync(2);
     }
 }

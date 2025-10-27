@@ -237,7 +237,7 @@ namespace IDosGames
                 WebAppLink = WebSDK.webAppLink,
                 UserID = AuthService.UserID,
                 ClientSessionTicket = AuthService.ClientSessionTicket,
-                FunctionParameter = functionParameter // Установите дополнительные параметры
+                FunctionParameter = functionParameter // РЈСЃС‚Р°РЅРѕРІРёС‚Рµ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ РїР°СЂР°РјРµС‚СЂС‹
             };
 
             string functionURL = GetFunctionURL(functionName) + functionName.ToString();
@@ -246,7 +246,7 @@ namespace IDosGames
 
             try
             {
-                // Отправка объекта IGSRequest напрямую
+                // РћС‚РїСЂР°РІРєР° РѕР±СЉРµРєС‚Р° IGSRequest РЅР°РїСЂСЏРјСѓСЋ
                 string result = await IGSService.SendPostRequest(functionURL, request);
 
                 ServerFunctionResponsed?.Invoke();

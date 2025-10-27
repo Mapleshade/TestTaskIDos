@@ -466,7 +466,7 @@ namespace IDosGames
             {
                 if (property.Value is JValue)
                 {
-                    // Если значение - JValue, добавляем его в Dictionary
+                    // Р•СЃР»Рё Р·РЅР°С‡РµРЅРёРµ - JValue, РґРѕР±Р°РІР»СЏРµРј РµРіРѕ РІ Dictionary
                     result[property.Name] = ((JValue)property.Value).Value?.ToString();
                 }
                 else if (property.Value is JObject)

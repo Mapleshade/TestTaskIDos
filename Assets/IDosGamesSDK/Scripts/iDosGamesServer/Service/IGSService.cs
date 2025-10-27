@@ -111,7 +111,7 @@ namespace IDosGames
 
             string response = await SendPostRequest(URL_LOGIN_SYSTEM + nameof(LoginWithDeviceID), requestBody);
             
-            // Десериализация строки в объект GetAllUserDataResult  
+            // Р”РµСЃРµСЂРёР°Р»РёР·Р°С†РёСЏ СЃС‚СЂРѕРєРё РІ РѕР±СЉРµРєС‚ GetAllUserDataResult  
             GetAllUserDataResult result = JsonConvert.DeserializeObject<GetAllUserDataResult>(response);
 
             if (result != null ) { IDosGamesSDKSettings.Instance.PlayTime = 0; }
@@ -132,7 +132,7 @@ namespace IDosGames
 
             string response = await SendPostRequest(URL_LOGIN_SYSTEM + ServerFunctionHandlers.LoginWithTelegram.ToString(), requestBody);
 
-            // Десериализация строки в объект GetAllUserDataResult  
+            // Р”РµСЃРµСЂРёР°Р»РёР·Р°С†РёСЏ СЃС‚СЂРѕРєРё РІ РѕР±СЉРµРєС‚ GetAllUserDataResult  
             GetAllUserDataResult result = JsonConvert.DeserializeObject<GetAllUserDataResult>(response);
 
             if (result != null) { IDosGamesSDKSettings.Instance.PlayTime = 0; }
@@ -564,7 +564,7 @@ namespace IDosGames
 
         public static void LogLongString(string longString)
         {
-            const int chunkSize = 15000; // Размер фрагмента  
+            const int chunkSize = 15000; // Р Р°Р·РјРµСЂ С„СЂР°РіРјРµРЅС‚Р°  
             for (int i = 0; i < longString.Length; i += chunkSize)
             {
                 if (i + chunkSize > longString.Length)

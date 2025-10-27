@@ -51,6 +51,11 @@ namespace IDosGames
 		private void OnFinishLoad()
 		{
 			SwitchSceneFinished?.Invoke();
+
+			if (SceneManager.GetActiveScene().name == "Main")
+				SceneManager.LoadSceneAsync(2, LoadSceneMode.Additive);
+			else
+				SceneManager.UnloadSceneAsync(2);
 		}
 
 		private IEnumerator LoadSceneAsync(int sceneBuildIndex)
