@@ -48,7 +48,7 @@ public class PlayerData
 	public string previousName = "Trash Cat";
 
     public bool licenceAccepted;
-    public bool tutorialDone;
+    public bool tutorialDone = true;
 
 	public float masterVolume = float.MinValue, musicVolume = float.MinValue, masterSFXVolume = float.MinValue;
 
