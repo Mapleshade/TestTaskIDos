@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 #if UNITY_ANALYTICS
 using UnityEngine.Analytics;
 #endif
@@ -82,6 +83,11 @@ public class GameManager : MonoBehaviour
         state.Enter(m_StateStack[m_StateStack.Count - 1]);
         m_StateStack.RemoveAt(m_StateStack.Count - 1);
         m_StateStack.Add(state);
+        
+        if (newState == "Game")
+            SceneManager.UnloadSceneAsync(2);
+        else if (newState == "Loadout")
+            SceneManager.LoadSceneAsync(2, LoadSceneMode.Additive);
     }
 
 	public AState FindState(string stateName)

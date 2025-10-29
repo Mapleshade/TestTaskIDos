@@ -142,7 +142,7 @@ namespace IDosGames
             }
             catch
             {
-                return false; // кривой JSON
+                return false; // РєСЂРёРІРѕР№ JSON
             }
         }
 
